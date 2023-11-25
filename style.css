@@ -1,0 +1,565 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+    /* header */
+
+.header {
+    background: linear-gradient(180deg, #6875F0 0%, #023047 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1134px;
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 1134px;
+    padding: 36px 0;
+    margin-top: 20px;
+    font-family: 'Raleway',sans-serif;    
+    font-weight: 900;
+}
+
+
+nav .logo {
+    font-size: 40px ;
+    font-weight: 900px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.button {
+padding: 16px 32px;
+border-radius: 24px;
+font-size: 16px;
+text-decoration: none;
+background-color: #023047
+}
+
+.hero-section {
+    padding-top: 60px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: white;
+    padding-right: 30px;
+}
+
+.hero-section .left  {
+    text-align: left;
+    width: 50%;
+}
+
+.hero-section .left h1{
+    font-size: 50px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+    width: 90%;
+}
+
+.hero-section .left p {
+    font-size: 16px;
+    font-family:'Poppins',sans-serif;
+    text-align: left;
+    margin: 18px 0 30px;
+    font-size: 16px;
+    line-height: 200%;
+    width: 75%;
+    font-weight:500;
+}
+
+.hero-section .left button {
+    display: flex;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    gap: 10px;
+    background-color:#DA722C ;
+}
+
+.hero-section .left button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.achievement-cards {
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Poppins',sans-serif   ;
+}
+
+.achievement-card-student-enrolled {
+    border-radius: 25px;
+    padding: 4px 40px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.achievement-card-student-enrolled .content h3 {
+    font-size: 40px;
+    
+}
+
+.hero-section .achievement-cards .achievement-card-overall-rating .behind,
+.hero-section .achievement-card-student-enrolled .behind {
+    border-radius: 25px;
+    padding: 4px 40px;
+    border: none;
+    background-color: red;
+    z-index: -1;
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+
+.achievement-card-overall-rating {
+    border-radius: 25px ;
+    border: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-top: 130px;
+    padding: 16px 25px;
+    position: relative;
+    right: 20px;
+} 
+
+.achievement-card-overall-rating .content h3 {
+    font-size: 40px;
+    
+}
+
+.achievement-card-overall-rating .content div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero-section .right img {
+    height: 490px;
+    vertical-align: middle;
+    margin-top: 185px;
+    position: relative;
+    left: 30px; 
+}
+
+    /* students say */
+
+.student-say {
+    margin-top: 100px;
+    display: flex;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+.student-say .left .left__male:first-child::before {
+    content: '';
+    width: 28px;
+    height: 600px;
+    background-color: black;
+    border-radius: 24px;
+    position:absolute;
+    z-index: -1;   
+    transform: translateX(50px);
+}
+
+.student-say .left {
+    width: 50%;
+    margin-right: 90px;  
+}
+
+.student-say .left .left__male {
+    border-radius: 20px;
+    border: 0.1px whitesmoke solid;
+    background-color: whitesmoke;
+}
+
+.student-say .left .left__male .content {
+    border-radius: 25px;
+    background-color: #6F7DFB;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    padding:  22px 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: 1000;
+    line-height: 30px;
+}
+
+.student-say .left .left__male .infor  {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.student-say .left .left__male .infor a{
+    display: flex;
+    font-size: 24px;
+}
+
+.student-say .left .left__male .infor a:nth-child(2){
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 5;
+}
+
+.student-say .left .left__male .infor img {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    bottom: 60px;
+}
+
+.student-say .left .left__female {
+    border: 0.1px whitesmoke solid;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    margin-top: 50px;
+    position: relative;
+    left: 20px;
+}
+
+.student-say .left .left__female .content {
+    border-radius: 20px;
+    border: none;
+    background-color: #DA722C;
+    padding: 25px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 20px;
+}
+
+.student-say .left .left__female .infor {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.student-say .left .left__female .infor a {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.student-say .left .left__female .infor a:nth-child(2){
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 5 q;
+}
+
+.student-say .left .left__female .infor img {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    bottom: 50px;
+}
+
+
+.student-say .right {
+    margin-top: 80px;
+}
+
+.student-say .right h1{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #023047;
+}
+
+.student-say .right p {
+    width: 90%;
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.student-say .right button {
+    border-radius: 25px;
+    border: none;
+    background-color: #DA722C;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.student-say .right button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+    /* Our courses */
+
+.course {
+    margin-top: 200px;
+    background-color: #616EE6;
+    width: 100%;
+}
+
+.course .wrapper .title {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 60px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900; 
+}
+
+.course .time {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+    gap: 130px;
+}
+
+.time .time__left {
+    border-radius: 20px;
+    background-color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+.time .time__left div:nth-child(2){
+    display: flex;
+    margin-top: 30px;
+}
+
+.time .time__left .o_clock,
+.time .time__right .o_clock {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    font-family: 'Raleway',sans-serif;
+}
+
+
+
+.time .time__left h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Raleway',sans-serif;
+}
+
+
+.divider {
+    border: 4px #023047 solid;
+    border-radius: 20px;
+}
+
+.time .time__right {
+    border-radius: 20px;
+    background-color: white;
+    padding: 0 32px;
+}
+
+.time .time__right div:nth-child(2){
+    display: flex;
+    margin-top: 30px;
+    
+}
+
+.time .time__right h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Raleway',sans-serif;
+}
+
+
+
+.wrapper .time .time__left img,
+.wrapper .time .time__right img {
+    width: 436px;
+    border-radius: 25px;
+}
+
+
+
+.wrapper .time .time__left .o_clock img,
+.wrapper .time .time__right .o_clock img {
+    width:20px;
+    position: relative;
+    top: 15px;
+}
+
+.course .wrapper button  {
+    margin: 50px 0 70px 0;
+    border-radius: 30px;
+    background-color: #DA722C;
+    border: none;
+    padding: 20px 40px;
+    position: relative;
+    left: 970px;
+}
+
+.course .wrapper button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+    /* app */
+
+.app {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.app .title {
+    font-size: 60px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+    color: #023047;
+    margin-top: 20px;
+}
+
+.app .guide {
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    margin: 16px 0 50px 0;
+}
+
+.app .download {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app .download .app-store,
+.app .download .gg-play {
+    display: flex;
+    border: solid white;
+    background-color: black;
+    gap: 10px;
+    padding: 15px 30px;
+}
+
+.app .download .app-store p,
+.app .download .gg-play p {
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    position: relative;
+    top: 17px;
+    margin-right: 70px;
+}
+
+    /* footer */
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+
+
+.footer .wrapper .contact{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+
+.footer .wrapper .contact .Link div,
+.footer .wrapper .contact .Course div,
+.footer .wrapper .contact .Contact div:nth-child(1){
+    color: #DA722C;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 750;
+    padding-bottom: 20px;
+}
+
+.footer li {
+    list-style: none;
+    margin-left: 15px;
+    padding: 7px 0;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+}
+
+.footer a {
+    text-decoration:none;
+    color: white;
+    list-style: none;
+}
+
+.footer .wrapper .contact .Contact img  {
+    position: relative;
+    left: 10px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.footer .wrapper .contact form input {
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: relative;
+    left: 10px;
+    margin-top: 20px ;
+    font-size: 16px;
+    text-align: left;
+    width: 400px;
+}
+
+.footer .wrapper .contact .Contact button {
+    border-radius: 10px;
+    background-color: #023047;
+    color: white;
+    padding: 5px 30px;
+    position:relative;
+    right: 130px;
+}
+
+
+.footer .wrapper div:nth-child(2){
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    padding-bottom: 70px;
+}
+
+
+
